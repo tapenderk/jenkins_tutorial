@@ -22,7 +22,7 @@ pipeline {
                }
             }
             steps{
-               sh'dotnet -version'
+               sh'dotnet --version'
             }
         }   
     }   
