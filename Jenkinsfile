@@ -14,6 +14,7 @@ pipeline {
                docker build --pull -t ubuntu-dotnet:latest -f Dockerfile docker-build-tmp
             '''
          }
+      }
          stage ('use-docker') {
             agent {
                docker{
@@ -23,7 +24,6 @@ pipeline {
             steps{
                sh'dotnet -version'
             }
-         }   
-      }   
-   }
+        }   
+    }   
 }
