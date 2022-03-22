@@ -23,6 +23,7 @@ pipeline {
             }
             steps{
                sh'dotnet --version'
+               sh'ls -la'
             }
         }   
     }   
