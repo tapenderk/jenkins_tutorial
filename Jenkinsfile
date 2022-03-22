@@ -10,7 +10,7 @@ pipeline {
       stage ('build-docker') {
          steps{
             sh '''
-               mkdir tmp-dir
+               mkdir -p tmp-dir
                docker build --pull -t ubuntu-dotnet:latest -f Dockerfile tmp-dir
             '''
          }
