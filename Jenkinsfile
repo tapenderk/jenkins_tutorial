@@ -6,6 +6,11 @@ pipeline {
          steps {
             sh "./build.sh"
          }
-      }   
+      }
+      stage ('test'){
+         steps{
+            sh './build/app'
+         }
+      }
     }   
 }
