@@ -10,5 +10,7 @@ pipeline {
       stage('test'){
          steps{
             sh "./build/app"
+         }
+      }   
     }   
 }
